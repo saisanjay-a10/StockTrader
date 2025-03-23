@@ -22,9 +22,9 @@ public class Stocks
                 minPrice=p;
             }else{
                 int q=p-minPrice;
-                maxProfit=maxProfit>q?;
+                maxProfit=maxProfit>q?(maxProfit:q);
             }
         }
-        return maxProfit
+        return maxProfit;
     }
 }
